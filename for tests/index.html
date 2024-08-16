@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+      <div class="user-form " >
+        <form class="signup-form">
+          <div class="notify"></div>
+          <h2>Login</h2>
+          <input type="email" id="email" placeholder="Email" />
+          <input type="password" id="password" placeholder="Password" />
+          <button id="loginBtn">Login</button>
+          <button id="signupBtn">Create Account</button>
+        </form>
+      </div>
+
+
+      <!-- admin-page -->
+    <div class="admin-page my_blog">
+      <header>
+        <nav>
+          <ul>
+            <li><a target="_blank" href="Home.html">Home</a></li>
+            <li><a target="_blank" href="contact.html">Contact us</a></li>
+            <button style="margin-left:  40% ;" id="logoutBtn">Logout</button>
+          </ul>
+        </nav>
+      </header>
+      <div class="notify"></div>
+      <div class="container main">
+        <div class="main_content">
+          <div class="post_form">
+            <label style="font-size: 20px;">Title</label>
+            <input type="text" id="title" placeholder=" Enter Title" />
+            <label style="font-size: 20px;"> Your Post</label>
+            <textarea name="" id="post_content" cols="30" rows="10"></textarea>
+            <button id="post_btn" class="post_btn">post Now</button>
+            <button id="update_btn" class="update_btn">Update Post</button>
+          </div>
+          <!-- table -->
+          <div class="my_content">
+            <h2>My Posts</h2>
+            <table></table>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <p><strong>Living the Developer Life</strong></p>
+      <p style="padding: 5px; " >Copyright 2024, Mubashir Javed</p>
+      <p><i style="padding: 5px; font-size: 20px;" class="fa-brands fa-github" ></i>
+        <i style="padding: 5px; font-size: 20px;" class="fa-brands fa-linkedin"></i></p>
+    </footer>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
